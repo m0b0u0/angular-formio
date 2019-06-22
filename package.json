@@ -1,5 +1,5 @@
 {
-  "name": "angular-formio",
+  "name": "angular-formio-gp",
   "version": "3.20.0",
   "scripts": {
     "build": "gulp build",
