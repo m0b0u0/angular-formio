@@ -196,18 +196,5 @@ Basics
 
 Summary of changes
 --------------------------
-- In the Form Manager, the Enter Data and View Data options are disabled. This is because we want to use the manager strictly to create and modify the form (Edit), but not to actually manage the data for the forms.
-- Disabled creation of Wizard and PDF types of forms. We only allow to create regular forms.
-- Added Material Icon for Delete on a form. At this time, this requires that the following styles be defined globally at the application level (subject to change in future versions...):
-```
-.formio-icon-button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px;
-    padding-top: 2px;
-}
+- #fork #1 https://github.com/m0b0u0/angular-formio-gp/issues/1
 
-.formio-icon {
-    font-size: 18px;
-}
-```

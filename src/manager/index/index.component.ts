@@ -72,8 +72,8 @@ export class FormManagerIndexComponent implements OnInit {
   }
 
   onSelect(row: any) {
-// #fork    this.router.navigate([row._id, 'view'], { relativeTo: this.route });
-   this.router.navigate([row._id, 'edit'], { relativeTo: this.route }); // #fork
+// #fork #1    this.router.navigate([row._id, 'view'], { relativeTo: this.route });
+   this.router.navigate([row._id, 'edit'], { relativeTo: this.route }); // #fork #1
   }
 
   onCreateItem() {

@@ -12,7 +12,7 @@ import _ from 'lodash';
 export class FormManagerEditComponent implements AfterViewInit {
   @ViewChild(FormBuilderComponent, {static: false}) builder: FormBuilderComponent;
   @ViewChild('title', {static: false}) formTitle: ElementRef;
-  // #fork @ViewChild('type', {static: false}) formType: ElementRef;
+  // #fork #1 @ViewChild('type', {static: false}) formType: ElementRef;
   public form: any;
   public loading: Boolean;
   public formReady: Boolean;
@@ -40,7 +40,7 @@ export class FormManagerEditComponent implements AfterViewInit {
       return this.service.loadForm().then(form => {
         this.form = form;
         this.formTitle.nativeElement.value = form.title;
-     // #fork   this.formType.nativeElement.value = form.display || 'form';
+     // #fork #1  this.formType.nativeElement.value = form.display || 'form';
         this.loading = false;
         this.formReady = true;
         this.ref.detectChanges();
@@ -69,8 +69,8 @@ export class FormManagerEditComponent implements AfterViewInit {
   saveForm() {
     this.loading = true;
     this.form.title = this.formTitle.nativeElement.value;
-    // #fork this.form.display = this.formType.nativeElement.value;
-    this.form.display = 'form'; // #fork - we support only the 'form' type
+    // #fork #1 this.form.display = this.formType.nativeElement.value;
+    this.form.display = 'form'; // #fork #1 - we support only the 'form' type
     this.form.components = this.builder.formio.schema.components;
     if (this.config.tag) {
       this.form.tags = this.form.tags || [];
@@ -98,11 +98,11 @@ export class FormManagerEditComponent implements AfterViewInit {
   onSave() {
     return this.saveForm().then((form) => {
       if (this.editMode) {
-// #fork        this.router.navigate(['../', 'view'], {relativeTo: this.route});
-        this.router.navigate(['../', 'edit'], {relativeTo: this.route}); // #fork
+// #fork #1        this.router.navigate(['../', 'view'], {relativeTo: this.route});
+        this.router.navigate(['../', 'edit'], {relativeTo: this.route}); // #fork #1
       } else {
-// #fork        this.router.navigate(['../', form._id, 'view'], {relativeTo: this.route});
-        this.router.navigate(['../', form._id, 'edit'], {relativeTo: this.route}); // #fork
+// #fork #1        this.router.navigate(['../', form._id, 'view'], {relativeTo: this.route});
+        this.router.navigate(['../', form._id, 'edit'], {relativeTo: this.route}); // #fork #1
       }
     });
   }
