@@ -19,6 +19,7 @@ export class FormioResourceDeleteComponent {
   }
 
   onCancel() {
-    this.router.navigate(['../', 'view'], { relativeTo: this.route });
+    // #fork    this.router.navigate(['../', 'view'], { relativeTo: this.route });
+    this.router.navigate(['../', 'view'], { relativeTo: this.route }); // #fork
   }
 }

@@ -177,3 +177,37 @@ To render this form, you simply provide that URL to the ```<formio>``` directive
 ```<formio src="https://pjmfogrfqptslvi.form.io/test"></formio>```
 
 Not only will this render the form, but it will also submit that form to the provided API endpoint.
+
+About this #fork
+==========================
+Goal of this fork are:
+- Language translations.
+- Additional/modified UI options.
+- Attempt to merge back changes from there original repo.
+
+Where possible we identify changes in the code with the label `#fork` in a comment, so they are easy to locate using a simple text search in the code editor. Of course the commits are the reliable way to find out.
+
+Basics
+--------------------------
+- Clone the repo then `npm install`
+- Build the distribution: `npm run-script build`
+  - This will create the `dist` folder with a package.json with name `angular-formio` and with everything that is needed to install under the `node_modules/angular-formio` folder of the the applications.
+  - The content of `dist` can then be distributed locally or through `npmjs.com` for instance.
+
+Summary of changes
+--------------------------
+- In the Form Manager, the Enter Data and View Data options are disabled. This is because we want to use the manager strictly to create and modify the form (Edit), but not to actually manage the data for the forms.
+- Disabled creation of Wizard and PDF types of forms. We only allow to create regular forms.
+- Added Material Icon for Delete on a form. At this time, this requires that the following styles be defined globally at the application level (subject to change in future versions...):
+```
+.formio-icon-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-top: 2px;
+}
+
+.formio-icon {
+    font-size: 18px;
+}
+```

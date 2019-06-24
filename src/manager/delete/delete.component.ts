@@ -21,6 +21,7 @@ export class FormManagerDeleteComponent {
   }
 
   onCancel() {
-    this.router.navigate(['../', 'view'], { relativeTo: this.route });
+    // #fork this.router.navigate(['../', 'view'], { relativeTo: this.route });
+    this.router.navigate(['../', 'edit'], { relativeTo: this.route }); // #fork
   }
 }

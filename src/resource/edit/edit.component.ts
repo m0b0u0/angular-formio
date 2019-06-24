@@ -20,7 +20,8 @@ export class FormioResourceEditComponent {
     edit.data = submission.data;
     this.service.save(edit)
       .then(() => {
-        this.router.navigate(['../', 'view'], { relativeTo: this.route });
+// #fork        this.router.navigate(['../', 'view'], { relativeTo: this.route });
+          this.router.navigate(['../', 'edit'], { relativeTo: this.route });
       })
       .catch((err) => this.triggerError.emit(err));
   }

@@ -28,7 +28,8 @@ export class FormioResourceCreateComponent implements OnInit {
     this.service
       .save(submission)
       .then(() => {
-        this.router.navigate(['../', this.service.resource._id, 'view'], {
+// #fork        this.router.navigate(['../', this.service.resource._id, 'view'], {
+  this.router.navigate(['../', this.service.resource._id, 'edit'], { // #fork
           relativeTo: this.route
         });
       })

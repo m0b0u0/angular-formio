@@ -1,6 +1,7 @@
 {
   "name": "angular-formio",
   "version": "3.20.0",
+  "description": "Fork of angular-formio by m0b0u0. Original at https://github.com/formio/angular-formio.",
   "scripts": {
     "build": "gulp build",
     "build:watch": "gulp",

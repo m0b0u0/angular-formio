@@ -13,6 +13,7 @@ export class SubmissionIndexComponent {
   ) {}
 
   onSelect(row: any) {
-    this.router.navigate([row._id, 'view'], {relativeTo: this.route});
+// #fork    this.router.navigate([row._id, 'view'], {relativeTo: this.route});
+    this.router.navigate([row._id, 'edit'], {relativeTo: this.route}); // #fork
   }
 }
