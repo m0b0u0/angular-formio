@@ -1,6 +1,6 @@
 {
-  "name": "angular-formio",
-  "version": "3.20.0",
+  "name": "angular-formio-gp-temporary",
+  "version": "3.20.100007",
   "description": "Fork of angular-formio by m0b0u0. Original at https://github.com/formio/angular-formio.",
   "scripts": {
     "build": "gulp build",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/formio/angular-formio"
+    "url": "https://github.com/m0b0u0/angular-formio-gp"
   },
   "author": {
     "name": "Travis Tidwell",
@@ -105,7 +105,8 @@
   },
   "dependencies": {
     "core-js": "^3.1.3",
-    "formiojs": "^3.22.4",
+    "formiojs": "^3.22.15",
+    "formiojs-gp": "^3.22.9009002",
     "lodash": "^4.17.11",
     "ngx-bootstrap": "^4.3.0"
   }

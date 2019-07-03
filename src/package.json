@@ -1,9 +1,9 @@
 {
-  "name": "angular-formio",
+  "name": "angular-formio-gp-temporary",
   "version": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/formio/angular-formio"
+    "url": "https://github.com/m0b0u0/angular-formio-gp"
   },
   "author": {
     "name": "Travis Tidwell",

@@ -22,7 +22,7 @@ import {
   FormioRefreshValue
 } from '../../formio.common';
 import { isEmpty, get, assign } from 'lodash';
-import { Formio, Form } from 'formiojs';
+import { Formio, Form } from 'formiojs-gp';
 
 /* tslint:disable */
 @Component({
