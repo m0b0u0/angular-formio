@@ -1,6 +1,6 @@
 {
-  "name": "angular-formio-gp-temporary",
-  "version": "3.20.100007",
+  "name": "angular-formio-gp",
+  "version": "3.20.90000001",
   "description": "Fork of angular-formio by m0b0u0. Original at https://github.com/formio/angular-formio.",
   "scripts": {
     "build": "gulp build",
